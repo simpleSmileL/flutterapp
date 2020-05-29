@@ -14,6 +14,17 @@ class _BottomNavigationBarDemo extends State<BottomNavigationBarDemo> {
   void _onTagHandler(int index) {
     setState(() {
       _currentIndex = index;
+      print('点击了第几个-----' + index.toString());
+      switch (index) {
+        case 0:
+          break;
+        case 1:
+          break;
+        case 2:
+          break;
+        case 3:
+          break;
+      }
     });
   }
 
@@ -27,8 +38,8 @@ class _BottomNavigationBarDemo extends State<BottomNavigationBarDemo> {
       onTap: _onTagHandler,
       items: [
         BottomNavigationBarItem(
-            icon: Icon(Icons.explore), title: Text('explore')),
-        BottomNavigationBarItem(icon: Icon(Icons.list), title: Text('list')),
+            icon: Icon(Icons.category), title: Text('category')),
+        BottomNavigationBarItem(icon: Icon(Icons.dvr), title: Text('dvr')),
         BottomNavigationBarItem(
             icon: Icon(Icons.history), title: Text('history')),
         BottomNavigationBarItem(icon: Icon(Icons.person), title: Text('my')),

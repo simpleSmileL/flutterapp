@@ -7,14 +7,16 @@ class ListViewDemo extends StatelessWidget{
       color: Colors.white,
       margin: EdgeInsets.all(8.0),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Image.network(posts[index].imgurl),
+          Image.network(posts[index].imgurl,fit: BoxFit.cover,),
           SizedBox(height: 16.0),
-          Text(posts[index].title,
+          Text('标题：'+posts[index].title,
             style: Theme.of(context).textTheme.title,
           ),
-          Text(posts[index].author,
+          Text('作者：'+posts[index].author,
             style: Theme.of(context).textTheme.subhead,
+
           ),
           SizedBox(height: 16.0),
         ],
