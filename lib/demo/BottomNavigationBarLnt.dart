@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import '../demo/HelloDemo.dart';
 import '../demo/BottemNavigationBarDemo.dart';
 import '../demo/ListViewDemo.dart';
+import '../demo/view_demo.dart';
+import '../demo/stepper_demo.dart';
+import '../demo/card_demo.dart';
 
 class BottomNavigationBarLnt extends StatefulWidget {
   BottomNavigationBarLnt({Key key}) : super(key: key);
@@ -13,7 +16,7 @@ class BottomNavigationBarLnt extends StatefulWidget {
 class BottomNavigationBarTest extends State<BottomNavigationBarLnt>{
 
   int _cuurentIndex = 0;
-  final List<Widget> chiledList = [Hellodemo(),BottomNavigationBarDemo(),ListViewDemo(),ListViewDemo()];
+  final List<Widget> chiledList = [CardDemo(),StepperDemo(),ListViewDemo(),ViewDemo()];
   final List<BottomNavigationBarItem> _listItem = <BottomNavigationBarItem>[
     BottomNavigationBarItem(
         icon: Icon(Icons.home),
