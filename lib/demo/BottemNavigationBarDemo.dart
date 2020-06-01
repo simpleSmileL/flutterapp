@@ -15,16 +15,6 @@ class _BottomNavigationBarDemo extends State<BottomNavigationBarDemo> {
     setState(() {
       _currentIndex = index;
       print('点击了第几个-----' + index.toString());
-      switch (index) {
-        case 0:
-          break;
-        case 1:
-          break;
-        case 2:
-          break;
-        case 3:
-          break;
-      }
     });
   }
 
@@ -38,10 +28,13 @@ class _BottomNavigationBarDemo extends State<BottomNavigationBarDemo> {
       onTap: _onTagHandler,
       items: [
         BottomNavigationBarItem(
-            icon: Icon(Icons.category), title: Text('category')),
-        BottomNavigationBarItem(icon: Icon(Icons.dvr), title: Text('dvr')),
+            icon: Icon(
+              Icons.book,
+            ),
+            title: Text('book')),
+        BottomNavigationBarItem(icon: Icon(Icons.movie), title: Text('movie')),
         BottomNavigationBarItem(
-            icon: Icon(Icons.history), title: Text('history')),
+            icon: Icon(Icons.music_video), title: Text('music_video')),
         BottomNavigationBarItem(icon: Icon(Icons.person), title: Text('my')),
       ],
     );
