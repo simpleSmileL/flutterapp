@@ -26,10 +26,9 @@ class App extends StatelessWidget {
 }
 
 class Home extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
-
-    // TODO: implement build
     return DefaultTabController(
       length: 3,
       child: Scaffold(
@@ -53,7 +52,7 @@ class Home extends StatelessWidget {
               indicatorColor: Colors.black54,
 
               indicatorSize: TabBarIndicatorSize.label,
-              indicatorWeight: 1.0,
+              indicatorWeight: 3.0,
               //指示条的粗细调整
               tabs: <Widget>[
                 Tab(icon: Icon(Icons.local_florist)),
@@ -61,13 +60,13 @@ class Home extends StatelessWidget {
                 Tab(icon: Icon(Icons.directions_bike)),
               ]),
         ),
-        body: TabBarView(children: <Widget>[
+        body:TabBarView(children: <Widget>[
           ListViewDemo(),
           Hellodemo(),
           LayoutDemo()
         ]),
         drawer: DrawerDemo(),
-        bottomNavigationBar:BottomNavigationBarDemo() ,
+        bottomNavigationBar:BottomNavigationBarDemo(),
       ),
     );
   }

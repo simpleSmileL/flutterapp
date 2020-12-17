@@ -3,13 +3,18 @@ import 'package:flutter/material.dart';
 class BottomNavigationBarDemo extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return _BottomNavigationBarDemo();
   }
 }
 
 class _BottomNavigationBarDemo extends State<BottomNavigationBarDemo> {
   int _currentIndex = 0;
+
+  int get currentIndex => _currentIndex;
+
+  set currentIndex(int value) {
+    _currentIndex = value;
+  }
 
   void _onTagHandler(int index) {
     setState(() {
@@ -31,6 +36,7 @@ class _BottomNavigationBarDemo extends State<BottomNavigationBarDemo> {
             icon: Icon(
               Icons.book,
             ),
+            // ignore: deprecated_member_use
             title: Text('book')),
         BottomNavigationBarItem(icon: Icon(Icons.movie), title: Text('movie')),
         BottomNavigationBarItem(
