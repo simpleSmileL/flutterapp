@@ -51,6 +51,7 @@ class Home extends StatelessWidget {
           bottom: TabBar(
               unselectedLabelColor: Colors.black38,
               indicatorColor: Colors.black54,
+
               indicatorSize: TabBarIndicatorSize.label,
               indicatorWeight: 1.0,
               //指示条的粗细调整
