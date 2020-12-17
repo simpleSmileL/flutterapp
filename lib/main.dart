@@ -6,7 +6,7 @@ import 'demo/ListViewDemo.dart';
 import 'demo/TabBarViewDemo.dart';
 import 'demo/BottomNavigationBarLnt.dart';
 import 'demo/LayoutDemo.dart';
-import 'demo/ViewDemo.dart';
+
 void main() => runApp(App());
 
 class App extends StatelessWidget {
@@ -28,9 +28,10 @@ class App extends StatelessWidget {
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     // TODO: implement build
     return DefaultTabController(
-      length: 4,
+      length: 3,
       child: Scaffold(
         backgroundColor: Colors.grey[100],
         appBar: AppBar(
@@ -44,7 +45,9 @@ class Home extends StatelessWidget {
                 tooltip: 'Search',
                 onPressed: () => debugPrint('Search button is click')),
           ],
+
           elevation: 0.0, //阴影设置
+
           bottom: TabBar(
               unselectedLabelColor: Colors.black38,
               indicatorColor: Colors.black54,
@@ -55,17 +58,15 @@ class Home extends StatelessWidget {
                 Tab(icon: Icon(Icons.local_florist)),
                 Tab(icon: Icon(Icons.change_history)),
                 Tab(icon: Icon(Icons.directions_bike)),
-                Tab(icon: Icon(Icons.language)),
               ]),
         ),
-        body: TabBarView(
-            children: <Widget>[
-              ListViewDemo(),
-              Hellodemo(),
-              LayoutDemo(),
-              ViewDemo()]),
+        body: TabBarView(children: <Widget>[
+          ListViewDemo(),
+          Hellodemo(),
+          LayoutDemo()
+        ]),
         drawer: DrawerDemo(),
-        bottomNavigationBar: BottomNavigationBarDemo(),
+        bottomNavigationBar:BottomNavigationBarDemo() ,
       ),
     );
   }
