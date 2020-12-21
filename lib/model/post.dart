@@ -15,15 +15,15 @@ final List<Post> posts = [
       title: '山长水远',
       author: '虾饺',
       imgurl:
-          'https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/04782e30-d72a-4917-9d7a-c862226e0a93'),
+          'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1608285067381&di=03d41e274d30fc053fba28243eb8a3ea&imgtype=0&src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202002%2F22%2F20200222133521_hk4Hz.thumb.400_0.jpeg'),
   Post(
       title: '五湖四海',
       author: '瞎搞',
       imgurl:
-          'https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/0736fecb-5b88-483b-a83d-ca2a5a6d93f9'),
+          'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2576279090,989817525&fm=26&gp=0.jpg'),
   Post(
       title: '富可敌国',
       author: '呵呵哒',
       imgurl:
-          'https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/114bec2f-fbfd-4b13-91de-907fe57c6e37'),
+          'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1608285139404&di=096be8c3701294b27747a248ebd73f29&imgtype=0&src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_match%2F0%2F11392170297%2F0.jpg'),
 ];
